@@ -1,0 +1,27 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  display:grid;
+  grid-template-area
+  "header header"
+  "content1 side"
+  "content2 side"
+  "footer footer";
+  grid-gap: 8px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr 2fr 2fr 1fr; 
+}
+.content1 {
+  grid-area: content1;
+  color: red;
+}
+.content2 {
+  grid-area: content1;
+  color: red;
+}
+.footer {
+  grid-area: content1;
+  color: red;
+}
